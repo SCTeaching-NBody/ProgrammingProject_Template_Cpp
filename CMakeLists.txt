@@ -28,7 +28,7 @@ target_compile_features(${LIBRARY_NAME} PUBLIC cxx_std_20)
 target_include_directories(${LIBRARY_NAME} PUBLIC include)
 # add warning flags based on the used C++-compiler
 target_compile_options(${LIBRARY_NAME} PUBLIC
-        $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Wextra -Wpedantic -Werror -Wshadow -Wunitialized -Wnull-dereference -Wnon-virtual-dtor -Wsuggest-override>
+        $<$<CXX_COMPILER_ID:GNU,Clang>:-Wall -Wextra -Wpedantic -Werror -Wshadow -Wuninitialized -Wnull-dereference -Wnon-virtual-dtor -Wsuggest-override>
         $<$<CXX_COMPILER_ID:MSVC>:/W4 /WX>
 )
 # add math definition
