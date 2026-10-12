@@ -6,4 +6,3 @@ results:
     phase1: path/to/results/with/phase1.csv
     phase2: path/to/results/with/phase2.csv
     dubinski: path/to/results/with/phase2_dubinski.csv
-    animation: path/to/results/with/animation.avi
